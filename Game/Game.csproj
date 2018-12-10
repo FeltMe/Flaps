@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DefoultObject.cs" />
     <Compile Include="Levels.xaml.cs">
       <DependentUpon>Levels.xaml</DependentUpon>
     </Compile>
