@@ -33,12 +33,12 @@ namespace Game
                 X2 = 90,
                 Y2 = 45,
                 Stroke = (sender as Ellipse).Stroke,
-                StrokeThickness = 7
+                StrokeThickness = 16
 
             };
-            Grid.SetColumn(line, i);
-            Grid.SetRow(line, i + 1);
-            temp.Children.Add(line);
+            Grid.SetColumn(line, 3);
+            Grid.SetRow(line, 4);
+            MainGrid.Children.Add(line);
         }
     }
 }

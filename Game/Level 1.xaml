@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Start" Height="450" Width="450" ResizeMode="NoResize">
 
-    <Grid ShowGridLines="True" Margin="0,0,2,2">
+    <Grid ShowGridLines="True" Margin="0,0,2,2" x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -48,7 +48,7 @@
         <Ellipse Fill="Green" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="4" Grid.Row="3"/>
         <Ellipse Fill="Green" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="2" Grid.Row="4" MouseDown="Ellipse_MouseDown" />
         <Ellipse Fill="Gray" HorizontalAlignment="Left" Height="15" Margin="35,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" Grid.Column="3" Grid.Row="4" RenderTransformOrigin="1.267,0.4"/>
-        <Ellipse Fill="Green" HorizontalAlignment="Left" Height="15" Margin="35,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" Grid.Column="4" Grid.Row="4" RenderTransformOrigin="1.267,0.4"/>
+        <Ellipse Fill="Gray" HorizontalAlignment="Left" Height="15" Margin="35,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="15" Grid.Column="4" Grid.Row="4" RenderTransformOrigin="1.267,0.4"/>
 
 
     </Grid>
