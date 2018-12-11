@@ -36,9 +36,9 @@ Title="MainWindow" Height="400" Width="400" ResizeMode="NoResize">
         <Grid.ShowGridLines>
             true
         </Grid.ShowGridLines>
-        <Canvas>
+        <Canvas x:Name="Can">
             <!--First-->
-            <Ellipse Fill="Blue"/>
+            <Ellipse Fill="Blue" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
             <Ellipse Canvas.Left = "254" Fill="Red"/>
             <Ellipse Canvas.Left = "334" Fill="Orange"/>
             <!--Second-->
