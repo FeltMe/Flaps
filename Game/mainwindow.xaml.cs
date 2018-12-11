@@ -34,5 +34,10 @@ namespace Game
         {
             new Level().ShowDialog();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            new Help().ShowDialog();
+        }
     }
 }
