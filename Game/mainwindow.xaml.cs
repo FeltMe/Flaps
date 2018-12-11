@@ -27,7 +27,12 @@ namespace Game
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            new Start().ShowDialog();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            new Level().ShowDialog();
         }
     }
 }

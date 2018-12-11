@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="Level" Height="450" Width="800">
     <Grid>
-        <Button Content="1" HorizontalAlignment="Left" Margin="119,78,0,0" VerticalAlignment="Top" Width="65" Height="65" FontSize="48" FontFamily="Wide Latin"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="119,78,0,0" VerticalAlignment="Top" Width="65" Height="65" FontSize="48" FontFamily="Wide Latin" Click="Button_Click_1"/>
         <Button Content="2" HorizontalAlignment="Left" Margin="304,78,0,0" VerticalAlignment="Top" Width="65" Height="65" FontSize="48" FontFamily="Wide Latin"/>
         <Button Content="3" HorizontalAlignment="Left" Margin="489,78,0,0" VerticalAlignment="Top" Width="65" Height="65" FontFamily="Wide Latin" FontSize="48"/>
         <Button Content="4" HorizontalAlignment="Left" Margin="119,225,0,0" VerticalAlignment="Top" Width="65" Height="65" RenderTransformOrigin="-3.216,2.541" FontFamily="Wide Latin" FontSize="48"/>
         <Button Content="5" HorizontalAlignment="Left" Margin="304,225,0,0" VerticalAlignment="Top" Width="65" Height="65" FontFamily="Wide Latin" FontSize="48"/>
         <Button Content="6" HorizontalAlignment="Left" Margin="489,225,0,0" VerticalAlignment="Top" Width="65" Height="65" FontFamily="Wide Latin" FontSize="48"/>
+        <Button Content="&lt;== Back" HorizontalAlignment="Left" Margin="661,355,0,0" VerticalAlignment="Top" Width="110" Height="54" FontFamily="Wide Latin" FontSize="16" Click="Button_Click"/>
 
     </Grid>
 </Window>
