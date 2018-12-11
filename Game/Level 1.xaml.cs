@@ -21,35 +21,9 @@ namespace Game
  
     public partial class Start : Window
     {
-        protected Polyline Green_polyline = new Polyline();
-        protected Polyline Red_polyline = new Polyline();
-        protected Polyline Yellow_polyline = new Polyline();
-        protected Polyline Orange_polyline = new Polyline();
-
         public Start()
         {
             InitializeComponent();
         }
-
-        private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            if((sender as Ellipse).Stroke == Brushes.Green)
-            {
-               //Green_polyline
-            }
-            else if ((sender as Ellipse).Stroke == Brushes.Red)
-            {
-
-            }
-            else if ((sender as Ellipse).Stroke == Brushes.Yellow)
-            {
-
-            }
-            else if ((sender as Ellipse).Stroke == Brushes.Orange)
-            {
-
-            }
-        }
-        
     }
 }
