@@ -17,8 +17,15 @@ namespace Game
     /// <summary>
     /// Interaction logic for Start.xaml
     /// </summary>
+    /// 
+ 
     public partial class Start : Window
     {
+        protected Polyline Green_polyline = new Polyline();
+        protected Polyline Red_polyline = new Polyline();
+        protected Polyline Yellow_polyline = new Polyline();
+        protected Polyline Orange_polyline = new Polyline();
+
         public Start()
         {
             InitializeComponent();
@@ -26,19 +33,23 @@ namespace Game
 
         private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Line line = new Line
+            if((sender as Ellipse).Stroke == Brushes.Green)
             {
-                X1 = 0,
-                Y1 = 45,
-                X2 = 90,
-                Y2 = 45,
-                Stroke = (sender as Ellipse).Stroke,
-                StrokeThickness = 16
+               //Green_polyline
+            }
+            else if ((sender as Ellipse).Stroke == Brushes.Red)
+            {
 
-            };
-            Grid.SetColumn(line, 3);
-            Grid.SetRow(line, 4);
-            MainGrid.Children.Add(line);
+            }
+            else if ((sender as Ellipse).Stroke == Brushes.Yellow)
+            {
+
+            }
+            else if ((sender as Ellipse).Stroke == Brushes.Orange)
+            {
+
+            }
         }
+        
     }
 }
