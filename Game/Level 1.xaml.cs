@@ -24,20 +24,21 @@ namespace Game
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Ellipse_MouseUp(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
         private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            
+            Line line = new Line
+            {
+                X1 = 0,
+                Y1 = 45,
+                X2 = 90,
+                Y2 = 45,
+                Stroke = (sender as Ellipse).Stroke,
+                StrokeThickness = 7
+
+            };
+            Grid.SetColumn(line, i);
+            Grid.SetRow(line, i + 1);
+            temp.Children.Add(line);
         }
-        
     }
 }
