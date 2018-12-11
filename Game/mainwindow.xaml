@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="START" HorizontalAlignment="Left" Margin="292,190,0,0" VerticalAlignment="Top" Width="266" Height="74" FontFamily="Wide Latin" FontSize="36"/>
+        <Button Content="START" HorizontalAlignment="Left" Margin="292,190,0,0" VerticalAlignment="Top" Width="266" Height="74" FontFamily="Wide Latin" FontSize="36" Click="Button_Click"/>
         <TextBox HorizontalAlignment="Left" Height="89" Margin="201,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="442" FontFamily="Vladimir Script" FontSize="48" Text="    F   .   L   .  O   .   W"/>
         <Button Content="LEVELS" HorizontalAlignment="Left" Margin="292,283,0,0" VerticalAlignment="Top" Width="266" Height="48" FontFamily="Wide Latin" FontSize="24"/>
         <Button Content="HELP" HorizontalAlignment="Left" Margin="292,347,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.68,0.128" Height="38" FontFamily="Wide Latin" FontSize="20"/>

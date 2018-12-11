@@ -6,7 +6,33 @@
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
         Title="Start" Height="450" Width="800">
-    <Grid>
-        
+    <Grid ShowGridLines="True" Margin="0,0,345,2">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Ellipse Fill="Blue" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66"/>
+        <Ellipse Fill="Blue" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="1" Grid.Row="4"/>
+        <Ellipse Fill="Red" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="1" Grid.Row="3"/>
+        <Ellipse Fill="Red" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="3" Grid.Row="0"/>
+        <Ellipse Fill="Orange" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="4" Grid.Row="0"/>
+        <Ellipse Fill="Yellow" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="3" Grid.Row="1"/>
+        <Ellipse Fill="Yellow" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="2" Grid.Row="2"/>
+        <Ellipse Fill="Orange" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="2" Grid.Row="3"/>
+        <Ellipse Fill="Green" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="4" Grid.Row="3"/>
+        <Ellipse Fill="Green" HorizontalAlignment="Left" Height="66" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="66" Grid.Column="2" Grid.Row="4"/>
+
     </Grid>
 </Window>
