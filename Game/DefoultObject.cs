@@ -10,5 +10,6 @@ namespace Game
     {
         public const int Size_of_x = 10;
         public const int Size_of_y = 10;
+        
     }
 }

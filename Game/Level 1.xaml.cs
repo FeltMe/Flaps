@@ -28,5 +28,16 @@ namespace Game
         {
 
         }
+
+        private void Ellipse_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+        
     }
 }
