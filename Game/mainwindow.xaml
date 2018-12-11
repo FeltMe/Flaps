@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="450" ResizeMode="NoResize">
     <Grid>
-        <Button Content="START" HorizontalAlignment="Left" Margin="292,190,0,0" VerticalAlignment="Top" Width="266" Height="74" FontFamily="Wide Latin" FontSize="36" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="89" Margin="201,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="442" FontFamily="Vladimir Script" FontSize="48" Text="    F   .   L   .  O   .   W"/>
-        <Button Content="LEVELS" HorizontalAlignment="Left" Margin="292,283,0,0" VerticalAlignment="Top" Width="266" Height="48" FontFamily="Wide Latin" FontSize="24" Click="Button_Click_1"/>
-        <Button Content="HELP" HorizontalAlignment="Left" Margin="292,347,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.68,0.128" Height="38" FontFamily="Wide Latin" FontSize="20" Click="Button_Click_2"/>
-        <Button Content="EXIT" HorizontalAlignment="Left" Margin="454,347,0,0" VerticalAlignment="Top" Width="104" Height="38" FontFamily="Wide Latin" FontSize="20"/>
+        <Button Content="START" HorizontalAlignment="Left" Margin="102,103,0,0" VerticalAlignment="Top" Width="266" Height="74" FontFamily="Wide Latin" FontSize="36" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="70" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="442" FontFamily="Vladimir Script" FontSize="48" Text="F         L        O       W" TextChanged="TextBox_TextChanged"/>
+        <Button Content="LEVELS" HorizontalAlignment="Left" Margin="102,198,0,0" VerticalAlignment="Top" Width="266" Height="48" FontFamily="Wide Latin" FontSize="24" Click="Button_Click_1"/>
+        <Button Content="HELP" HorizontalAlignment="Left" Margin="102,273,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.68,0.128" Height="38" FontFamily="Wide Latin" FontSize="20" Click="Button_Click_2"/>
+        <Button Content="EXIT" HorizontalAlignment="Left" Margin="264,273,0,0" VerticalAlignment="Top" Width="104" Height="38" FontFamily="Wide Latin" FontSize="20"/>
     </Grid>
 </Window>

@@ -39,5 +39,10 @@ namespace Game
         {
             new Help().ShowDialog();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
