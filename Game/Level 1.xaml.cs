@@ -24,15 +24,25 @@ namespace Game
 
     public partial class Start : Window
     {
+
+
         private MediaPlayer mp = new MediaPlayer();
-        Point Defoult_Green_point_1 = new Point();
-        Point Defoult_Green_point_2 = new Point();
-        Point Defoult_Red_point_1 = new Point();
-        Point Defoult_Red_point_2 = new Point();
-        Point Defoult_Yellow_point_1 = new Point();
-        Point Defoult_Yellow_point_2 = new Point();
-        Point Defoult_Orange_point_1 = new Point();
-        Point Defoult_Orange_point_2 = new Point();
+        Point Defoult_Green_point_1 = new Point(60, 60);
+        //Point Defoult_Green_point_2 = new Point();
+        //Point Defoult_Red_point_1 = new Point();
+        //Point Defoult_Red_point_2 = new Point();
+        //Point Defoult_Yellow_point_1 = new Point();
+        //Point Defoult_Yellow_point_2 = new Point();
+        //Point Defoult_Orange_point_1 = new Point();
+        //Point Defoult_Orange_point_2 = new Point();
+
+        Line line = new Line()
+        {
+            Fill = Brushes.Green,
+            Stroke = Brushes.Black,
+            StrokeThickness = 4
+            
+        };
 
         public Start()
         {
@@ -41,59 +51,24 @@ namespace Game
             mp.Play();
         }
 
-       //private void Ellipse_MouseDown(object sender, MouseEventArgs e)
-       //{
-       //
-       //   // var elipse = (sender as Ellipse);
-       //   // var l = Canvas.GetLeft(elipse);
-       //   // var t = Canvas.GetTop(elipse);
-       //   // var point1 = new Point(45, 45);
-       //   // var point2 = new Point(90, 45);
-       //   // Line line = new Line
-       //   // {
-       //   //     X1 = 45,
-       //   //     X2 = 90,
-       //   //     Y1 = 45,
-       //   //     Y2 = 45
-       //   // };
-       //   // Canvas.SetLeft(line, l);
-       //   // Canvas.SetTop(line, t);
-       //   // line.Fill = Brushes.Black;
-       //   // line.StrokeThickness = 6;
-       //   // Can.Children.Add(line);
-       //    
-       //
-       //
-       //  
-       //}
-
-        private void Ellipse_MouseMove(object sender, MouseEventArgs e)
+        private void Can_MouseMove(object sender, MouseEventArgs e)
         {
-            var elipse = (sender as Ellipse);
-            Polyline polyline = new Polyline();
-            Point first_point = new Point(e.GetPosition(elipse).X, e.GetPosition(elipse).Y);
-            
+            line.X1 = 60;
+            line.X2 = 60;
+            line.X2 = e.GetPosition(Can).X;
+            line.Y2 = e.GetPosition(Can).Y;
+            Can.Children.Remove(line);
+            Can.Children.Add(line);
         }
 
         private void Ellipse_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            var elipse = (sender as Ellipse);
-            var l = Canvas.GetLeft(elipse);
-            var t = Canvas.GetTop(elipse);
-            var point = new Point(45, 45);
-            Polyline pol = new Polyline
-            {
-                Fill = Brushes.Green
-            };
-            Canvas.SetLeft(pol, l);
-            Canvas.SetTop(pol, t);
-            pol.Points.Add(point);
-            pol.Points.Add(new Point(e.GetPosition(elipse).X, e.GetPosition(elipse).Y));
-            pol.Points.Add(new Point(Mouse.GetPosition(sender as Ellipse).X, Mouse.GetPosition(sender as Ellipse).Y));
-            pol.Fill = (sender as Ellipse).Fill;
-            pol.Stroke = Brushes.Black;
-            pol.StrokeThickness = 10;
-            Can.Children.Add(pol);
+            line.X1 = Defoult_Green_point_1.X;
+            line.X2 = Defoult_Green_point_1.Y;
+        }
+        private void Ellipse_MouseMove(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
