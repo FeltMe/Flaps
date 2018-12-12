@@ -34,6 +34,7 @@ Title="MainWindow" Height="400" Width="400" ResizeMode="NoResize">
             <!--5-th-->
             <Ellipse Canvas.Top = "314" Canvas.Left="97" Fill="Blue" Mouse.MouseMove="Ellipse_MouseMove"/>
             <Ellipse Canvas.Top = "314" Canvas.Left="175" Mouse.MouseMove="Ellipse_MouseMove"/>
+            <Ellipse Canvas.Top="30" Canvas.Left="90" Width="15" Height="15" Fill="White"></Ellipse>
 
         </Canvas>
 </Window>

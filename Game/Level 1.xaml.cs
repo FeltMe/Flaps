@@ -53,8 +53,8 @@ namespace Game
 
         private void Can_MouseMove(object sender, MouseEventArgs e)
         {
-            line.X1 = 60;
-            line.X2 = 60;
+            line.X1 = 35;
+            line.Y1 = 35;
             line.X2 = e.GetPosition(Can).X;
             line.Y2 = e.GetPosition(Can).Y;
             Can.Children.Remove(line);
