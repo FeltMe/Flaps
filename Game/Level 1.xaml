@@ -12,10 +12,10 @@ Title="MainWindow" Height="400" Width="400" ResizeMode="NoResize">
             <Setter Property="Stroke" Value="Black" />
             <Setter Property="Width" Value="45" />
             <Setter Property="Height" Value="45" />
-            <Setter Property="Canvas.Bottom" Value="16"/>
-            <Setter Property="Canvas.Top" Value="16"/>
-            <Setter Property="Canvas.Left" Value="16"/>
-            <Setter Property="Canvas.Right" Value="16"/>
+            <Setter Property="Canvas.Bottom" Value="15"/>
+            <Setter Property="Canvas.Top" Value="15"/>
+            <Setter Property="Canvas.Left" Value="15"/>
+            <Setter Property="Canvas.Right" Value="15"/>
         </Style>
     </Window.Resources>
     <Grid>
@@ -39,19 +39,19 @@ Title="MainWindow" Height="400" Width="400" ResizeMode="NoResize">
         <Canvas x:Name="Can">
             <!--First-->
             <Ellipse Fill="Blue" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
-            <Ellipse Canvas.Left = "254" Fill="Red"/>
-            <Ellipse Canvas.Left = "334" Fill="Orange"/>
+            <Ellipse Canvas.Left = "254" Fill="Red" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
+            <Ellipse Canvas.Left = "334" Fill="Orange" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
             <!--Second-->
-            <Ellipse Canvas.Top = "90" Canvas.Left="254" Fill="Yellow" />
+            <Ellipse Canvas.Top = "90" Canvas.Left="254" Fill="Yellow" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
             <!--3-th-->
-            <Ellipse Canvas.Top = "164" Canvas.Left="175" Fill="Yellow"/>
+            <Ellipse Canvas.Top = "164" Canvas.Left="175" Fill="Yellow" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
             <!--4-th-->
-            <Ellipse Canvas.Top = "240" Canvas.Left="100" Fill="Red"/>
-            <Ellipse Canvas.Top = "240" Canvas.Left="175" Fill="Orange"/>
-            <Ellipse Canvas.Top = "240" Canvas.Left="325"/>
+            <Ellipse Canvas.Top = "236" Canvas.Left="97" Fill="Red" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
+            <Ellipse Canvas.Top = "236" Canvas.Left="175" Fill="Orange" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
+            <Ellipse Canvas.Top = "236" Canvas.Left="334" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
             <!--5-th-->
-            <Ellipse Canvas.Top = "314" Canvas.Left="100" Fill="Blue"/>
-            <Ellipse Canvas.Top = "314" Canvas.Left="175"/>
+            <Ellipse Canvas.Top = "314" Canvas.Left="97" Fill="Blue" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
+            <Ellipse Canvas.Top = "314" Canvas.Left="175" MouseDown="Ellipse_MouseDown" MouseUp="Ellipse_MouseUp"/>
 
         </Canvas>
     </Grid>
