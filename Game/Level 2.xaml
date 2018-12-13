@@ -6,6 +6,14 @@
         xmlns:local="clr-namespace:Game"
         mc:Ignorable="d"
         Title="Level_2" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Ellipse">
+            <Setter Property="Fill" Value="Green"/>
+            <Setter Property="Stroke" Value="Black" />
+            <Setter Property="Width" Value="45" />
+            <Setter Property="Height" Value="45" />
+        </Style>
+    </Window.Resources>
     <Grid>
         
     </Grid>

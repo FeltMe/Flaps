@@ -27,7 +27,11 @@ namespace Game
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            this.Visibility = Visibility.Hidden;
             new Start().ShowDialog();
+
+            this.Visibility = Visibility.Visible;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
