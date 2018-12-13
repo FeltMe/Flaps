@@ -38,8 +38,8 @@ namespace Game
         {
             if (line.line.X1 > 0 && line.line.Y1 > 0)
             {
-                line.line.X2 = e.GetPosition(Can).X - 5;
-                line.line.Y2 = e.GetPosition(Can).Y - 5;
+                line.line.X2 = e.GetPosition(Can).X - 4;
+                line.line.Y2 = e.GetPosition(Can).Y - 4;
                 Can.Children.Remove(line.line);
                 Can.Children.Add(line.line);
             }
@@ -104,14 +104,14 @@ namespace Game
             }
 
         }
-        private void Ellipse_MouseMove(object sender, MouseEventArgs e)
-        {
-
-        }
-
         private void Ellipse_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             Can.Children.Remove(line.line);
+        }
+
+        private void Ellipse_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+
         }
     }
 }
