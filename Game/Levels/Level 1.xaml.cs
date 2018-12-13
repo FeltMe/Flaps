@@ -38,8 +38,8 @@ namespace Game
         {
             if (line.line.X1 > 0 && line.line.Y1 > 0)
             {
-                line.line.X2 = e.GetPosition(Can).X - 4;
-                line.line.Y2 = e.GetPosition(Can).Y - 4;
+                line.line.X2 = e.GetPosition(Can).X - 3;
+                line.line.Y2 = e.GetPosition(Can).Y - 3;
                 Can.Children.Remove(line.line);
                 Can.Children.Add(line.line);
             }
@@ -111,7 +111,10 @@ namespace Game
 
         private void Ellipse_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
-
+            Line some_line = new Line();
+            some_line.X1 = (sender as Line).X1;
+            some_line.Y1 = (sender as Line).Y1;
+            some_line.X2 = line.line.X2;
         }
     }
 }
