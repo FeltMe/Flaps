@@ -116,10 +116,15 @@ namespace Game
 
         private void Ellipse_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
-            Line some_line = new Line();
-            some_line.X1 = (sender as Line).X1;
-            some_line.Y1 = (sender as Line).Y1;
-            some_line.X2 = line.line.X2;
+            Line temp = new Line();
+            temp.X1 = line.line.X1;
+            temp.Y1 = line.line.Y2;
+            temp.X2 = line.line.X2;
+            temp.Y2 = line.line.Y2;
+            temp.StrokeThickness = 4;
+            temp.Fill = line.line.Fill;
+            temp.Stroke = line.line.Stroke;
+            Can.Children.Add(temp);
         }
     }
 }
