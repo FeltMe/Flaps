@@ -31,6 +31,13 @@ namespace Game
         {
             InitializeComponent();
             //mp.Open(, UriKind.RelativeOrAbsolute);
+
+            BitmapImage b = new BitmapImage(new Uri("Pictures/Level_1.jpg", UriKind.Relative));
+
+            ImageBrush ib = new ImageBrush();
+
+            ib.ImageSource = b;
+            this.Background = ib;
             mp.Play();
         }
 
