@@ -15,7 +15,7 @@ using System.Windows.Shapes;
 namespace Game
 {
     /// <summary>
-    /// Interaction logic for Level_6.xaml
+    /// Логика взаимодействия для Level_6.xaml
     /// </summary>
     public partial class Level_6 : Window
     {

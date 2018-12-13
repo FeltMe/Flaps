@@ -23,26 +23,9 @@ namespace Game
 
     public partial class Start : Window
     {
-
-
+        MyLines line = new MyLines();
+        DefoultObject df = new DefoultObject();
         private MediaPlayer mp = new MediaPlayer();
-        Point Defoult_Green_point_1 = new Point(315, 387);
-        Point Defoult_Green_point_2 = new Point(192, 377);
-        Point Defoult_Red_point_1 = new Point(270, 35);
-        Point Defoult_Red_point_2 = new Point(315, 157);
-        Point Defoult_Yellow_point_1 = new Point(270, 95);
-        Point Defoult_Yellow_point_2 = new Point(192, 235);
-        Point Defoult_Orange_point_1 = new Point(350, 34);
-        Point Defoult_Orange_point_2 = new Point(315, 235);
-        Point Defoult_Blue_point_1 = new Point(38, 35);
-        Point Defoult_Blue_point_2 = new Point(157, 377);
-
-        Line line = new Line()
-        {
-            Fill = Brushes.Green,
-            Stroke = Brushes.Black,
-            StrokeThickness = 4,
-        };
 
         public Start()
         {
@@ -53,12 +36,12 @@ namespace Game
 
         private void Can_MouseMove(object sender, MouseEventArgs e)
         {
-            if (line.X1 > 0 && line.Y1 > 0)
+            if (line.line.X1 > 0 && line.line.Y1 > 0)
             {
-                line.X2 = e.GetPosition(Can).X - 5;
-                line.Y2 = e.GetPosition(Can).Y - 5;
-                Can.Children.Remove(line);
-                Can.Children.Add(line);
+                line.line.X2 = e.GetPosition(Can).X - 5;
+                line.line.Y2 = e.GetPosition(Can).Y - 5;
+                Can.Children.Remove(line.line);
+                Can.Children.Add(line.line);
             }
         }
 
@@ -66,29 +49,60 @@ namespace Game
         {
             double Mouse_X = Mouse.GetPosition(Can).X;
             double Mouse_Y = Mouse.GetPosition(Can).Y;
-            line.Stroke = (sender as Ellipse).Stroke;
-            line.Fill = (sender as Ellipse).Fill;
+            line.line.Stroke = (sender as Ellipse).Stroke;
+            line.line.Fill = (sender as Ellipse).Fill;
 
             if (Mouse_X > 0 && Mouse_X < 65 && Mouse_Y > 0 && Mouse_Y < 55)
             {
-                line.X1 = Defoult_Blue_point_1.X;
-                line.Y1 = Defoult_Blue_point_1.Y;
+                line.line.X1 = df.Defoult_Blue_point_1.X;
+                line.line.Y1 = df.Defoult_Blue_point_1.Y;
             }
             else if (Mouse_X > 248 && Mouse_X < 320 && Mouse_Y > 0 && Mouse_Y < 55)
             {
-                line.X1 = Defoult_Red_point_1.X;
-                line.Y1 = Defoult_Red_point_1.Y;
+                line.line.X1 = df.Defoult_Red_point_1.X;
+                line.line.Y1 = df.Defoult_Red_point_1.Y;
             }
             else if (Mouse_X > 248 && Mouse_X < 320 && Mouse_Y > 70 && Mouse_Y < 125)
             {
-                line.X1 = Defoult_Yellow_point_1.X;
-                line.Y1 = Defoult_Yellow_point_1.Y;
+                line.line.X1 = df.Defoult_Yellow_point_1.X;
+                line.line.Y1 = df.Defoult_Yellow_point_1.Y;
             }
             else if (Mouse_X > 320 && Mouse_X < 400 && Mouse_Y > 0 && Mouse_Y < 55)
             {
-                line.X1 = Defoult_Orange_point_1.X;
-                line.Y1 = Defoult_Orange_point_1.Y;
+                line.line.X1 = df.Defoult_Orange_point_1.X;
+                line.line.Y1 = df.Defoult_Orange_point_1.Y;
             }
+            else if (Mouse_X > 120 && Mouse_X < 220 && Mouse_Y > 125 && Mouse_Y < 180)
+            {
+                line.line.X1 = df.Defoult_Yellow_point_2.X;
+                line.line.Y1 = df.Defoult_Yellow_point_2.Y;
+            }
+            else if (Mouse_X > 90 && Mouse_X < 145 && Mouse_Y > 260 && Mouse_Y < 315)
+            {
+                line.line.X1 = df.Defoult_Red_point_2.X;
+                line.line.Y1 = df.Defoult_Red_point_2.Y;
+            }
+            else if (Mouse_X > 165 && Mouse_X < 220 && Mouse_Y > 260 && Mouse_Y < 315)
+            {
+                line.line.X1 = df.Defoult_Orange_point_2.X;
+                line.line.Y1 = df.Defoult_Orange_point_2.Y;
+            }
+            else if (Mouse_X > 320 && Mouse_X < 400 && Mouse_Y > 260 && Mouse_Y < 315)
+            {
+                line.line.X1 = df.Defoult_Green_point_1.X;
+                line.line.Y1 = df.Defoult_Green_point_1.Y;
+            }
+            else if (Mouse_X > 90 && Mouse_X < 145 && Mouse_Y > 320 && Mouse_Y < 400)
+            {
+                line.line.X1 = df.Defoult_Blue_point_2.X;
+                line.line.Y1 = df.Defoult_Blue_point_2.Y;
+            }
+            else if (Mouse_X > 165 && Mouse_X < 220 && Mouse_Y > 320 && Mouse_Y < 400)
+            {
+                line.line.X1 = df.Defoult_Green_point_2.X;
+                line.line.Y1 = df.Defoult_Green_point_2.Y;
+            }
+
         }
         private void Ellipse_MouseMove(object sender, MouseEventArgs e)
         {
@@ -97,7 +111,7 @@ namespace Game
 
         private void Ellipse_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Can.Children.Remove(line);
+            Can.Children.Remove(line.line);
         }
     }
 }

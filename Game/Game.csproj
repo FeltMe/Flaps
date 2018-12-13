@@ -80,6 +80,7 @@
     <Compile Include="Level 1.xaml.cs">
       <DependentUpon>Level 1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MyLines.cs" />
     <Compile Include="Win.cs" />
     <Page Include="Help.xaml">
       <SubType>Designer</SubType>
