@@ -55,58 +55,58 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DefoultObject.cs" />
-    <Compile Include="Help.xaml.cs">
+    <Compile Include="Clases\DefoultObject.cs" />
+    <Compile Include="Levels\Help.xaml.cs">
       <DependentUpon>Help.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Level 2.xaml.cs">
+    <Compile Include="Levels\Level 2.xaml.cs">
       <DependentUpon>Level 2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Level 3.xaml.cs">
+    <Compile Include="Levels\Level 3.xaml.cs">
       <DependentUpon>Level 3.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Level 4.xaml.cs">
+    <Compile Include="Levels\Level 4.xaml.cs">
       <DependentUpon>Level 4.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Level 5.xaml.cs">
+    <Compile Include="Levels\Level 5.xaml.cs">
       <DependentUpon>Level 5.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Level 6.xaml.cs">
+    <Compile Include="Levels\Level 6.xaml.cs">
       <DependentUpon>Level 6.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Levels.xaml.cs">
+    <Compile Include="Levels\Levels.xaml.cs">
       <DependentUpon>Levels.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Level 1.xaml.cs">
+    <Compile Include="Levels\Level 1.xaml.cs">
       <DependentUpon>Level 1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MyLines.cs" />
-    <Compile Include="Win.cs" />
-    <Page Include="Help.xaml">
+    <Compile Include="Clases\MyLines.cs" />
+    <Compile Include="Clases\Win.cs" />
+    <Page Include="Levels\Help.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Level 2.xaml">
+    <Page Include="Levels\Level 2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Level 3.xaml">
+    <Page Include="Levels\Level 3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Level 4.xaml">
+    <Page Include="Levels\Level 4.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Level 5.xaml">
+    <Page Include="Levels\Level 5.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Level 6.xaml">
+    <Page Include="Levels\Level 6.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Levels.xaml">
+    <Page Include="Levels\Levels.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,7 +122,7 @@
       <DependentUpon>mainwindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Level 1.xaml">
+    <Page Include="Levels\Level 1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -153,8 +153,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Clases\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
