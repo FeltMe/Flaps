@@ -30,12 +30,12 @@ namespace Game
         Point Defoult_Green_point_2 = new Point(192, 377);
         Point Defoult_Red_point_1 = new Point(270, 35);
         Point Defoult_Red_point_2 = new Point(315, 157);
-        Point Defoult_Yellow_point_1 = new Point(130, 308);
+        Point Defoult_Yellow_point_1 = new Point(270, 95);
         Point Defoult_Yellow_point_2 = new Point(192, 235);
-        Point Defoult_Orange_point_1 = new Point(60, 387);
+        Point Defoult_Orange_point_1 = new Point(350, 34);
         Point Defoult_Orange_point_2 = new Point(315, 235);
         Point Defoult_Blue_point_1 = new Point(38, 35);
-        Point Defoult_Blue_point_2 = new Point(377, 157);
+        Point Defoult_Blue_point_2 = new Point(157, 377);
 
         Line line = new Line()
         {
@@ -55,8 +55,8 @@ namespace Game
         {
             if (line.X1 > 0 && line.Y1 > 0)
             {
-                line.X2 = e.GetPosition(Can).X - 1;
-                line.Y2 = e.GetPosition(Can).Y - 1;
+                line.X2 = e.GetPosition(Can).X - 5;
+                line.Y2 = e.GetPosition(Can).Y - 5;
                 Can.Children.Remove(line);
                 Can.Children.Add(line);
             }
@@ -66,6 +66,8 @@ namespace Game
         {
             double Mouse_X = Mouse.GetPosition(Can).X;
             double Mouse_Y = Mouse.GetPosition(Can).Y;
+            line.Stroke = (sender as Ellipse).Stroke;
+            line.Fill = (sender as Ellipse).Fill;
 
             if (Mouse_X > 0 && Mouse_X < 65 && Mouse_Y > 0 && Mouse_Y < 55)
             {
@@ -81,6 +83,11 @@ namespace Game
             {
                 line.X1 = Defoult_Yellow_point_1.X;
                 line.Y1 = Defoult_Yellow_point_1.Y;
+            }
+            else if (Mouse_X > 320 && Mouse_X < 400 && Mouse_Y > 0 && Mouse_Y < 55)
+            {
+                line.X1 = Defoult_Orange_point_1.X;
+                line.Y1 = Defoult_Orange_point_1.Y;
             }
         }
         private void Ellipse_MouseMove(object sender, MouseEventArgs e)
