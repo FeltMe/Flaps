@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 using System.Windows.Shapes;
 
 namespace Game
@@ -13,6 +14,8 @@ namespace Game
         public Line line = new Line()
         {
             StrokeThickness = 4,
+            Fill = Brushes.Aqua,
+            Stroke = Brushes.Aqua
         };
         public Line line_blue = new Line()
         {

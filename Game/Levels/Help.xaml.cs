@@ -22,6 +22,7 @@ namespace Game
         public Help()
         {
             InitializeComponent();
+            
         }
     }
 }

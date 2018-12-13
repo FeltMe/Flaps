@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="450" ResizeMode="NoResize">
 
+    <Window.Background>
+        <ImageBrush ImageSource= "Pictures/Niceee.png">
+           
+        </ImageBrush>
+    </Window.Background>
 
     <Grid>
         <Button Content="START" HorizontalAlignment="Left" Margin="102,103,0,0" VerticalAlignment="Top" Width="266" Height="74" FontFamily="Wide Latin" FontSize="36" Click="Button_Click"/>

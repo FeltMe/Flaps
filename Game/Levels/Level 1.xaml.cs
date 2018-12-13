@@ -45,8 +45,8 @@ namespace Game
         {
             if (line.line.X1 > 0 && line.line.Y1 > 0)
             {
-                line.line.X2 = e.GetPosition(Can).X - 3;
-                line.line.Y2 = e.GetPosition(Can).Y - 3;
+                line.line.X2 = e.GetPosition(Can).X - 5;
+                line.line.Y2 = e.GetPosition(Can).Y - 5;
                 Can.Children.Remove(line.line);
                 Can.Children.Add(line.line);
             }
@@ -56,8 +56,6 @@ namespace Game
         {
             double Mouse_X = Mouse.GetPosition(Can).X;
             double Mouse_Y = Mouse.GetPosition(Can).Y;
-            line.line.Stroke = (sender as Ellipse).Stroke;
-            line.line.Fill = (sender as Ellipse).Fill;
 
             if (Mouse_X > 0 && Mouse_X < 65 && Mouse_Y > 0 && Mouse_Y < 55)
             {
