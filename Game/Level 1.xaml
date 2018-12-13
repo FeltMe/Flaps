@@ -12,10 +12,6 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
             <Setter Property="Stroke" Value="Black" />
             <Setter Property="Width" Value="45" />
             <Setter Property="Height" Value="45" />
-            <Setter Property="Canvas.Bottom" Value="15"/>
-            <Setter Property="Canvas.Top" Value="15"/>
-            <Setter Property="Canvas.Left" Value="15"/>
-            <Setter Property="Canvas.Right" Value="15"/>
         </Style>
     </Window.Resources>
     <Grid ShowGridLines="True">
@@ -37,13 +33,13 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
 
         <Canvas x:Name="Can" MouseMove="Can_MouseMove">
             <!--First-->
-            <Ellipse Fill="Blue" Mouse.MouseMove="Ellipse_MouseMove" MouseDown="Ellipse_MouseDown" Canvas.Left="18" Canvas.Top="10"/>
-            <Ellipse Canvas.Left = "248" Fill="Red" Mouse.MouseMove="Ellipse_MouseMove" Canvas.Top="10"/>
-            <Ellipse Canvas.Left = "327" Fill="Orange" Mouse.MouseMove="Ellipse_MouseMove" Canvas.Top="10"/>
+            <Ellipse Fill="Blue" MouseDown="Ellipse_MouseDown" Canvas.Left="18" Canvas.Top="10" MouseRightButtonDown="Ellipse_MouseRightButtonDown"/>
+            <Ellipse Canvas.Left = "248" Fill="Red" Canvas.Top="10" MouseDown="Ellipse_MouseDown" MouseRightButtonDown="Ellipse_MouseRightButtonDown"/>
+            <Ellipse Canvas.Left = "327" Fill="Orange" Canvas.Top="10" MouseDown="Ellipse_MouseDown"/>
             <!--Second-->
-            <Ellipse Canvas.Top = "70" Canvas.Left="248" Fill="Yellow" Mouse.MouseMove="Ellipse_MouseMove"/>
+            <Ellipse Canvas.Top = "70" Canvas.Left="248" Fill="Yellow" MouseDown="Ellipse_MouseDown"/>
             <!--3-th-->
-            <Ellipse Canvas.Top = "132" Canvas.Left="175" Fill="Yellow" Mouse.MouseMove="Ellipse_MouseMove"/>
+            <Ellipse Canvas.Top = "132" Canvas.Left="175" Fill="Yellow" MouseDown="Ellipse_MouseDown"/>
             <!--4-th-->
             <Ellipse Canvas.Top = "255" Canvas.Left="97" Fill="Red" Mouse.MouseMove="Ellipse_MouseMove"/>
             <Ellipse Canvas.Top = "255" Canvas.Left="175" Fill="Orange" Mouse.MouseMove="Ellipse_MouseMove"/>
@@ -51,6 +47,7 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
             <!--5-th-->
             <Ellipse Canvas.Top = "317" Canvas.Left="97" Fill="Blue" Mouse.MouseMove="Ellipse_MouseMove"/>
             <Ellipse Canvas.Top = "317" Canvas.Left="175" Mouse.MouseMove="Ellipse_MouseMove"/>
+            <!--white elipse-->
             <Ellipse Canvas.Top="150" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
             <Ellipse Canvas.Top="85" Canvas.Left="341" Width="14" Height="15" Fill="White"/>
             <Ellipse Canvas.Top="85" Canvas.Left="110" Width="14" Height="15" Fill="White"/>
@@ -59,7 +56,7 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
             <Ellipse Canvas.Top="85" Canvas.Left="184" Width="14" Height="15" Fill="White"/>
             <Ellipse Canvas.Top="150" Canvas.Left="110" Width="14" Height="14" Fill="White"/>
             <Ellipse Canvas.Top="150" Canvas.Left="261" Width="14" Height="14" Fill="White"/>
-            <Ellipse Canvas.Top="150" Canvas.Left="341" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.286,0.381"/>
+            <Ellipse Canvas.Top="150" Canvas.Left="341" Width="14" Height="14" Fill="White"/>
             <Ellipse Canvas.Top="213" Canvas.Left="341" Width="14" Height="14" Fill="White"/>
             <Ellipse Canvas.Top="213" Canvas.Left="261" Width="14" Height="14" Fill="White"/>
             <Ellipse Canvas.Top="213" Canvas.Left="184" Width="14" Height="14" Fill="White"/>
@@ -71,8 +68,6 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
             <Ellipse Canvas.Top="332" Canvas.Left="341" Width="14" Height="14" Fill="White"/>
             <Ellipse Canvas.Top="332" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
             <Ellipse Canvas.Top="25" Canvas.Left="110" Width="14" Height="15" Fill="White"/>
-
         </Canvas>
-
     </Grid>
 </Window>
