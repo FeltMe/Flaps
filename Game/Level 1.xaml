@@ -14,9 +14,9 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
             <Setter Property="Height" Value="45" />
         </Style>
     </Window.Resources>
-    <!--<Window.Background>
+    <Window.Background>
         <ImageBrush ImageSource="Pictures/Level_1.jpg"/>
-    </Window.Background>-->
+    </Window.Background>
 
 
 
@@ -37,7 +37,7 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <Canvas x:Name="Can" MouseMove="Can_MouseMove">
+        <Canvas x:Name="Can" MouseMove="Can_MouseMove" Margin="0,0,-1,0">
             <!--First-->
             <Ellipse Fill="Blue" MouseDown="Ellipse_MouseDown" Canvas.Left="18" Canvas.Top="10" MouseRightButtonDown="Ellipse_MouseRightButtonDown"/>
             <Ellipse Canvas.Left = "248" Fill="Red" Canvas.Top="10" MouseDown="Ellipse_MouseDown" MouseRightButtonDown="Ellipse_MouseRightButtonDown"/>
