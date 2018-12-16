@@ -15,7 +15,7 @@
         </Style>
     </Window.Resources>
     <Window.Background>
-        <ImageBrush ImageSource="Pictures/Level_1.jpg"/>
+        <ImageBrush ImageSource="Pictures/Level_4.jpg"/>
     </Window.Background>
 
     <Grid ShowGridLines="True">
@@ -34,5 +34,40 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <Canvas x:Name="Can_4" MouseMove="Can_4_MouseMove" Margin="0,0,-1,0">
+            <!--First-->
+            <Ellipse Fill="Blue" MouseDown="Ellipse_MouseDown_4" Canvas.Left="332" Canvas.Top="264" MouseRightButtonDown="Ellipse_4_MouseRightButtonDown"/>
+            <Ellipse Canvas.Left = "175" Fill="Red" Canvas.Top="70" MouseDown="Ellipse_MouseDown_4" MouseRightButtonDown="Ellipse_4_MouseRightButtonDown" RenderTransformOrigin="0.719,1.715"/>
+            <Ellipse Canvas.Left = "19" Fill="Orange" Canvas.Top="70" MouseDown="Ellipse_MouseDown_4"/>
+            <!--Second-->
+            <Ellipse Canvas.Top = "199" Canvas.Left="94" Fill="Yellow" MouseDown="Ellipse_MouseDown_4"/>
+            <!--3-th-->
+            <Ellipse Canvas.Top = "199" Canvas.Left="257" Fill="Yellow" MouseDown="Ellipse_MouseDown_4"/>
+            <!--4-th-->
+            <Ellipse Canvas.Top = "10" Canvas.Left="19" Fill="Red"  MouseDown="Ellipse_MouseDown_4" RenderTransformOrigin="0.559,0.08"/>
+            <Ellipse Canvas.Top = "264" Canvas.Left="257" Fill="Orange"  MouseDown="Ellipse_MouseDown_4"/>
+            <Ellipse Canvas.Top = "138" Canvas.Left="94"  MouseDown="Ellipse_MouseDown_4"/>
+            <!--5-th-->
+            <Ellipse Canvas.Top = "10" Canvas.Left="175" Fill="Blue"  MouseDown="Ellipse_MouseDown_4"/>
+            <Ellipse Canvas.Top = "70" Canvas.Left="257"  MouseDown="Ellipse_MouseDown_4"/>
+            <!--white elipse-->
+
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="151" Canvas.Left="32" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.786,-2.071"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="85" Canvas.Left="348" Width="14" Height="15" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="150" Canvas.Left="269" Width="14" Height="15" Fill="White" RenderTransformOrigin="2.214,1"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="25" Canvas.Left="269" Width="14" Height="14" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="25" Canvas.Left="348" Width="14" Height="15" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="86" Canvas.Left="110" Width="14" Height="14" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="150" Canvas.Left="348" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.536,0.536"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="213" Canvas.Left="184" Width="14" Height="14" Fill="White" RenderTransformOrigin="1.214,0.643"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="213" Canvas.Left="348" Width="14" Height="14" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="151" Canvas.Left="184" Width="14" Height="14" Fill="White" RenderTransformOrigin="1.071,0.5"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="274" Canvas.Left="184" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.643,-1.143"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="213" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="274" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="275" Canvas.Left="110" Width="14" Height="14" Fill="White" RenderTransformOrigin="-11,3.357"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_4" Canvas.Top="25" Canvas.Left="110" Width="14" Height="15" Fill="White"/>
+        </Canvas>
+
     </Grid>
 </Window>
