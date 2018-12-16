@@ -44,33 +44,29 @@
             <!--3-th-->
             <Ellipse Canvas.Top = "261" Canvas.Left="257" Fill="Yellow" MouseDown="Ellipse_MouseDown_3"/>
             <!--4-th-->
-            <Ellipse Canvas.Top = "70" Canvas.Left="19" Fill="Red"  MouseDown="Ellipse_MouseDown_3"/>
+            <Ellipse Canvas.Top = "70" Canvas.Left="19" Fill="Red"  MouseDown="Ellipse_MouseDown_3" RenderTransformOrigin="0.559,0.08"/>
             <Ellipse Canvas.Top = "261" Canvas.Left="328" Fill="Orange"  MouseDown="Ellipse_MouseDown_3"/>
             <Ellipse Canvas.Top = "138" Canvas.Left="328"  MouseDown="Ellipse_MouseDown_3"/>
             <!--5-th-->
             <Ellipse Canvas.Top = "70" Canvas.Left="98" Fill="Blue"  MouseDown="Ellipse_MouseDown_3"/>
             <Ellipse Canvas.Top = "138" Canvas.Left="175"  MouseDown="Ellipse_MouseDown_3"/>
             <!--white elipse-->
-            <!--<Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="150" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
+
+            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="26" Canvas.Left="32" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.786,-2.071"/>
             <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="85" Canvas.Left="348" Width="14" Height="15" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="85" Canvas.Left="110" Width="14" Height="15" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="25" Canvas.Left="348" Width="14" Height="15" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="275" Canvas.Left="348" Width="14" Height="15" Fill="White" RenderTransformOrigin="1.286,1.867"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="150" Canvas.Left="269" Width="14" Height="15" Fill="White" RenderTransformOrigin="2.214,1"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="26" Canvas.Left="184" Width="14" Height="14" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="85" Canvas.Left="184" Width="14" Height="15" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="150" Canvas.Left="110" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="150" Canvas.Left="269" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="150" Canvas.Left="348" Width="14" Height="14" Fill="White" RenderTransformOrigin="1.214,0.643"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="86" Canvas.Left="269" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.643,-0.857"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="213" Canvas.Left="184" Width="14" Height="14" Fill="White" RenderTransformOrigin="1.214,0.643"/>
             <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="213" Canvas.Left="348" Width="14" Height="14" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="213" Canvas.Left="269" Width="14" Height="14" Fill="White" RenderTransformOrigin="1.071,0.5"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="150" Canvas.Left="184" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.643,-1.143"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="274" Canvas.Left="184" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.643,-1.143"/>
             <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="213" Canvas.Left="110" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="213" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="274" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="275" Canvas.Left="110" Width="14" Height="14" Fill="White" RenderTransformOrigin="-11,3.357"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="332" Canvas.Left="261" Width="14" Height="14" Fill="White" Margin="8,9,0,0"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="341" Canvas.Left="341" Width="14" Height="14" Fill="White" RenderTransformOrigin="0.714,1.071" Margin="7,0,0,0"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="332" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="25" Canvas.Left="110" Width="14" Height="15" Fill="White"/>-->
+            <Ellipse MouseDown="Ellipse_MouseDown_3" Canvas.Top="25" Canvas.Left="110" Width="14" Height="15" Fill="White"/>
         </Canvas>
 
     </Grid>
