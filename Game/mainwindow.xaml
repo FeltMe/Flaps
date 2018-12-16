@@ -9,15 +9,17 @@
 
     <Window.Background>
         <ImageBrush ImageSource= "Pictures/Start_win.jpg">
-           
+
         </ImageBrush>
     </Window.Background>
 
     <Grid>
         <Button Content="START" HorizontalAlignment="Left" Margin="102,103,0,0" VerticalAlignment="Top" Width="266" Height="74" FontFamily="Wide Latin" FontSize="36" Click="Button_Click"/>
-       
+
         <Button Content="LEVELS" HorizontalAlignment="Left" Margin="102,198,0,0" VerticalAlignment="Top" Width="266" Height="48" FontFamily="Wide Latin" FontSize="24" Click="Button_Click_1"/>
         <Button Content="HELP" HorizontalAlignment="Left" Margin="102,273,0,0" VerticalAlignment="Top" Width="129" RenderTransformOrigin="0.68,0.128" Height="38" FontFamily="Wide Latin" FontSize="20" Click="Button_Click_2"/>
         <Button Content="EXIT" HorizontalAlignment="Left" Margin="264,273,0,0" VerticalAlignment="Top" Width="104" Height="38" FontFamily="Wide Latin" FontSize="20"/>
+        <Button Content="♫" HorizontalAlignment="Left" Margin="402,349,0,0" VerticalAlignment="Top" Width="30" Height="60" FontSize="36" Click="Button_Click_3"/>
+
     </Grid>
 </Window>

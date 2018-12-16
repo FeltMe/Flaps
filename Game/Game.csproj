@@ -161,12 +161,13 @@
     <Resource Include="Pictures\Level_5.jpg" />
     <Resource Include="Pictures\Level_6.jpg" />
     <Resource Include="Pictures\Levels.jpg" />
+    <Content Include="Media\Start.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Pictures\Level_1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Levels\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

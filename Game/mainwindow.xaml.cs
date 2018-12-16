@@ -20,11 +20,16 @@ namespace Game
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MediaPlayer _Start;
+        private MediaPlayer _StartSound;
+
         public MainWindow()
         {
             InitializeComponent();
+            _Start = new MediaPlayer();
+            _StartSound = new MediaPlayer();
         }
-
+       
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -50,6 +55,13 @@ namespace Game
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            _Start.Open(new Uri("Media/Start.mp3", UriKind.RelativeOrAbsolute));
+            _Start.Play();
+            
         }
     }
 }
