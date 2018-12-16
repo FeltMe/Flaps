@@ -21,17 +21,17 @@ namespace Game
     public partial class MainWindow : Window
     {
         public MediaPlayer _Start;
-       // public MediaPlayer _StartSound;
+        // public MediaPlayer _StartSound;
 
         public MainWindow()
         {
             InitializeComponent();
             _Start = new MediaPlayer();
-          //  _StartSound = new MediaPlayer();
+            //  _StartSound = new MediaPlayer();
             _Start.Open(new Uri("Media/Start.mp3", UriKind.RelativeOrAbsolute));
             _Start.Play();
         }
-       
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
@@ -66,15 +66,21 @@ namespace Game
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-          //  _Start.Open(new Uri("Media/Start.mp3", UriKind.RelativeOrAbsolute));
+            //  _Start.Open(new Uri("Media/Start.mp3", UriKind.RelativeOrAbsolute));
             _Start.Pause();
+            // Button_Click_5=this.Visibility = Visibility.Hidden;
 
-            
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            this.Visibility = Visibility;
+            _Start.Play();
         }
     }
 }

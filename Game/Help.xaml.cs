@@ -12,12 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Threading;
-
 namespace Game
 {
-    /// <summary>
-    /// Interaction logic for Help.xaml
-    /// </summary>
+
     public partial class Help : Window
     {
         public MediaPlayer _Help;
@@ -29,8 +26,6 @@ namespace Game
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += timer_Tick;
             timer.Start();
-
-
         }
         void timer_Tick(object sender, EventArgs e)
         {
@@ -46,15 +41,17 @@ namespace Game
         {
             mePlayer.Play();
         }
-
         private void btnPause_Click(object sender, RoutedEventArgs e)
         {
             mePlayer.Pause();
         }
-
         private void btnStop_Click(object sender, RoutedEventArgs e)
         {
             mePlayer.Stop();
+        }
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
