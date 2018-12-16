@@ -43,22 +43,22 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
             <Ellipse Canvas.Left = "248" Fill="Red" Canvas.Top="10" MouseDown="Ellipse_MouseDown" MouseRightButtonDown="Ellipse_MouseRightButtonDown"/>
             <Ellipse Canvas.Left = "327" Fill="Orange" Canvas.Top="10" MouseDown="Ellipse_MouseDown"/>
             <!--Second-->
-            <Ellipse Canvas.Top = "70" Canvas.Left="248" Fill="Yellow" MouseDown="Ellipse_MouseDown"/>
+            <Ellipse Canvas.Top = "265" Canvas.Left="97" Fill="Yellow" MouseDown="Ellipse_MouseDown"/>
             <!--3-th-->
-            <Ellipse Canvas.Top = "132" Canvas.Left="175" Fill="Yellow" MouseDown="Ellipse_MouseDown"/>
+            <Ellipse Canvas.Top = "10" Canvas.Left="97" Fill="Yellow" MouseDown="Ellipse_MouseDown"/>
             <!--4-th-->
-            <Ellipse Canvas.Top = "255" Canvas.Left="97" Fill="Red"  MouseDown="Ellipse_MouseDown"/>
-            <Ellipse Canvas.Top = "255" Canvas.Left="175" Fill="Orange"  MouseDown="Ellipse_MouseDown"/>
-            <Ellipse Canvas.Top = "255" Canvas.Left="327"  MouseDown="Ellipse_MouseDown"/>
+            <Ellipse Canvas.Top = "265" Canvas.Left="248" Fill="Red"  MouseDown="Ellipse_MouseDown"/>
+            <Ellipse Canvas.Top = "265" Canvas.Left="327" Fill="Orange"  MouseDown="Ellipse_MouseDown"/>
+            <Ellipse Canvas.Top = "10" Canvas.Left="175"  MouseDown="Ellipse_MouseDown"/>
             <!--5-th-->
-            <Ellipse Canvas.Top = "317" Canvas.Left="97" Fill="Blue"  MouseDown="Ellipse_MouseDown"/>
-            <Ellipse Canvas.Top = "317" Canvas.Left="175"  MouseDown="Ellipse_MouseDown"/>
+            <Ellipse Canvas.Top = "265" Canvas.Left="18" Fill="Blue"  MouseDown="Ellipse_MouseDown"/>
+            <Ellipse Canvas.Top = "265" Canvas.Left="175"  MouseDown="Ellipse_MouseDown"/>
             <!--white elipse-->
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="150" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="85" Canvas.Left="341" Width="14" Height="15" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="85" Canvas.Left="110" Width="14" Height="15" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="85" Canvas.Left="32" Width="14" Height="15" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="25" Canvas.Left="184" Width="14" Height="15" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="85" Canvas.Left="261" Width="14" Height="15" Fill="White" RenderTransformOrigin="4.618,2.983"/>
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="85" Canvas.Left="184" Width="14" Height="15" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="150" Canvas.Left="110" Width="14" Height="14" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="150" Canvas.Left="261" Width="14" Height="14" Fill="White"/>
@@ -68,12 +68,7 @@ Title="MainWindow" Height="410" Width="400" ResizeMode="NoResize">
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="213" Canvas.Left="184" Width="14" Height="14" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="213" Canvas.Left="110" Width="14" Height="14" Fill="White"/>
             <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="213" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="274" Canvas.Left="32" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="274" Canvas.Left="261" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="332" Canvas.Left="261" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="332" Canvas.Left="341" Width="14" Height="14" Fill="White"/>
-            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="332" Canvas.Left="32" Width="14" Height="14" Fill="White"/>    
-            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="25" Canvas.Left="110" Width="14" Height="15" Fill="White"/>
+            <Ellipse MouseDown="Ellipse_MouseDown_1" Canvas.Top="150" Canvas.Left="184" Width="14" Height="14" Fill="White"/>
         </Canvas>
     </Grid>
 </Window>
