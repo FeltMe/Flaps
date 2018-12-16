@@ -161,6 +161,9 @@
     <Resource Include="Pictures\Level_5.jpg" />
     <Resource Include="Pictures\Level_6.jpg" />
     <Resource Include="Pictures\Levels.jpg" />
+    <Content Include="Media\Helper.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Media\Level_1.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
