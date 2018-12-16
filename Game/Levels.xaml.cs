@@ -19,6 +19,8 @@ namespace Game
     /// </summary>
     public partial class Level : Window
     {
+        
+        //  MediaPlayer _Start;
         public Level()
         {
             InitializeComponent();
@@ -33,8 +35,11 @@ namespace Game
         {
             this.Visibility = Visibility.Hidden;
             this.Close();
+           // _Start.Pause();
             new Start().ShowDialog();
             this.Visibility = Visibility.Visible;
+            //_ = new MediaPlayer();
+          
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

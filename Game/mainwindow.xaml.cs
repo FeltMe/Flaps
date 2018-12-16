@@ -20,14 +20,16 @@ namespace Game
     /// </summary>
     public partial class MainWindow : Window
     {
-        private MediaPlayer _Start;
-        private MediaPlayer _StartSound;
+        public MediaPlayer _Start;
+       // public MediaPlayer _StartSound;
 
         public MainWindow()
         {
             InitializeComponent();
             _Start = new MediaPlayer();
-            _StartSound = new MediaPlayer();
+          //  _StartSound = new MediaPlayer();
+            _Start.Open(new Uri("Media/Start.mp3", UriKind.RelativeOrAbsolute));
+            _Start.Play();
         }
        
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -41,7 +43,9 @@ namespace Game
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            _Start.Close();
             this.Visibility = Visibility.Hidden;
+            //_Start.Pause();
             new Level().ShowDialog();
             this.Visibility = Visibility.Visible;
 
@@ -49,7 +53,10 @@ namespace Game
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            this.Visibility = Visibility.Hidden;
+            _Start.Pause();
             new Help().ShowDialog();
+            this.Visibility = Visibility.Visible;
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -59,9 +66,15 @@ namespace Game
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            _Start.Open(new Uri("Media/Start.mp3", UriKind.RelativeOrAbsolute));
-            _Start.Play();
+          //  _Start.Open(new Uri("Media/Start.mp3", UriKind.RelativeOrAbsolute));
+            _Start.Pause();
+
             
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

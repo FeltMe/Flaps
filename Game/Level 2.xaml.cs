@@ -21,9 +21,14 @@ namespace Game
     {
         MyLines line = new MyLines();
         DefoultObject df = new DefoultObject();
+        private MediaPlayer _Level_2;
         public Level_2()
         {
             InitializeComponent();
+            _Level_2 = new MediaPlayer();
+            _Level_2.Open(new Uri("Media/Level_2.mp3", UriKind.RelativeOrAbsolute));
+            _Level_2.Play();
+
         }
 
 

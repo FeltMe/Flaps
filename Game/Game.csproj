@@ -161,6 +161,18 @@
     <Resource Include="Pictures\Level_5.jpg" />
     <Resource Include="Pictures\Level_6.jpg" />
     <Resource Include="Pictures\Levels.jpg" />
+    <Content Include="Media\Level_1.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Level_2.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Level_3.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Media\Level_4.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Media\Start.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

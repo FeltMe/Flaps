@@ -27,6 +27,8 @@ namespace Game
         DefoultObject df = new DefoultObject();
         private MediaPlayer mp = new MediaPlayer();
 
+        private MediaPlayer _Level_1;
+
         public Start()
         {
             InitializeComponent();
@@ -39,6 +41,10 @@ namespace Game
             //ib.ImageSource = b;
             //this.Background = ib;
             //mp.Play();
+            
+            _Level_1 = new MediaPlayer();
+            _Level_1.Open(new Uri("Media/Level_1.mp3", UriKind.RelativeOrAbsolute));
+            _Level_1.Play();
         }
 
         private void Can_MouseMove(object sender, MouseEventArgs e)

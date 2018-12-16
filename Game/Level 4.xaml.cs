@@ -21,9 +21,13 @@ namespace Game
     {
         MyLines line = new MyLines();
         DefoultObject df = new DefoultObject();
+        private MediaPlayer _Level_4;
         public Level_4()
         {
             InitializeComponent();
+            _Level_4 = new MediaPlayer();
+            _Level_4.Open(new Uri("Media/Level_4.mp3", UriKind.RelativeOrAbsolute));
+            _Level_4.Play();
         }
         private void Can_4_MouseMove(object sender, MouseEventArgs e)
         {
